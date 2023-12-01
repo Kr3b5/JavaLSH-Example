@@ -8,6 +8,7 @@ You need to add the JavaLSH library to your project.
 
 **Maven:** 
 ```xml
+<!-- https://mvnrepository.com/artifact/info.debatty/java-lsh -->
 <dependency>
     <groupId>info.debatty</groupId>
     <artifactId>java-lsh</artifactId>
@@ -16,12 +17,9 @@ You need to add the JavaLSH library to your project.
 ```
 
 **Gradle:**
-```xml
-<dependency>
-    <groupId>info.debatty</groupId>
-    <artifactId>java-lsh</artifactId>
-    <version>0.12</version>
-</dependency>
+```gradle
+// https://mvnrepository.com/artifact/info.debatty/java-lsh
+implementation group: 'info.debatty', name: 'java-lsh', version: '0.12'
 ```
 
 Then you can copy the class `LSH.java` to your project. Here is a quick example of how to use it:
