@@ -42,6 +42,7 @@ Parameters:
 - `dimensions`: The number of dimensions of the vectors/arrays.
 - `allowedDiff`: The allowed difference between two vectors to be considered similar.
 
+<br>
 
 2. Query the vectors (`List<double[]>`) you want to compare.
 ```java
@@ -51,6 +52,8 @@ lsh.queryVectors(list2, false);
 Parameters:
 - `list`: The list of vectors to query.
 - `isFirstSet`: Whether the list is the first set of vectors or not. This is used for the evaluation of the buckets.
+
+<br>
 
 3. Get the buckets for further processing or evaluate them directly.
 ```java
