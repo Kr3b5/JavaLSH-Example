@@ -59,7 +59,7 @@ Parameters:
 List<Bucket> buckets = lsh.getBuckets();
 
 // Evaluation of the buckets to determine whether the query vectors are similar (true) or not (false)
-lsh.evaluateBuckets();
+lsh.evaluate();
 ```
 
 ## Example
