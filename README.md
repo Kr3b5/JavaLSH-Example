@@ -48,7 +48,9 @@ Parameters:
 lsh.queryVectors(list1, true);
 lsh.queryVectors(list2, false);
 ```
-
+Parameters:
+- `list`: The list of vectors to query.
+- `isFirstSet`: Whether the list is the first set of vectors or not. This is used for the evaluation of the buckets.
 
 3. Get the buckets for further processing or evaluate them directly.
 ```java
