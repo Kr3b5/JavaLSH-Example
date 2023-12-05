@@ -10,7 +10,7 @@ public class LSH {
     private static final Logger logger = LoggerFactory.getLogger(LSH.class);
 
     private final int allowedDiff;
-    static List<LSHBucket> buckets;
+    private List<LSHBucket> buckets;
     private final LSHSuperBit lsh;
 
     /**
@@ -48,7 +48,7 @@ public class LSH {
      * @param  hash  the integer array containing the ID of the bucket to retrieve
      * @return       the LSHBucket object with the specified ID, or null if not found
      */
-    private static LSHBucket getBucket(int[] hash) {
+    private LSHBucket getBucket(int[] hash) {
         Optional<LSHBucket> matchingBucket = buckets.stream()
                 .filter(bucket -> bucket.getId() == hash[0])
                 .findFirst();
@@ -119,7 +119,7 @@ public class LSH {
      *
      * @return   the list of buckets
      */
-    public static List<LSHBucket> getBuckets() {
+    public List<LSHBucket> getBuckets() {
         return buckets;
     }
 }

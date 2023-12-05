@@ -25,7 +25,7 @@ public class StartExample {
         lsh.queryVectors(list1, true);
         lsh.queryVectors(list2, false);
 
-        List<LSHBucket> buckets = LSH.getBuckets();
+        List<LSHBucket> buckets = lsh.getBuckets();
         for (LSHBucket bucket : buckets) {
             System.out.println("Bucket ID: " + bucket.getId());
             System.out.println("   First set: ");
